@@ -1,8 +1,56 @@
 @charset "UTF-8";
 
 :root {
-    --cor1: #302b33;
+    --cor0: #302b33;
+    --cor1: #443b4a;
+    --cor2: #654a75;
+    --cor3: #7f4aa1;
+    --cor4: #933cc9;
+    --cor5: #a320f5;
 }
+body {
+    width: 97%;
+    background-color: black
+}
+
 header {
-    background-color: var(--cor1);
+    width: 100%;
+    background-color: var(--cor0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+main {
+    margin: auto;
+    width: 98%;
+    background-color: white;
+}
+main > h1 {
+    margin-left: 20px;
+}
+
+
+
+footer {
+    background-color: var(--cor0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+button.bt01 {
+    background-color: #443b4a;
+}
+
+button.bt01 > a {
+    color: white;
+    text-decoration: none;
+}
+button.bt01 > a:hover {
+    color: white;
+    text-decoration: underline;
 }
