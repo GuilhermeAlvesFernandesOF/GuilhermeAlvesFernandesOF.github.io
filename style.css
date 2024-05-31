@@ -192,10 +192,7 @@ section.competencias .flex {
 
 section.sobre {
     padding: 40px 4%;
-}
-
-section.sobre img {
-    width: 300px;
+    background-color: var(--cor3);
 }
 
 section.sobre .flex{
@@ -204,7 +201,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre {
-    color:var(--cor3);
+    color:var(--cor2);
 }
 
 .sobre .txt-sobre h2 {
@@ -213,15 +210,11 @@ section.sobre .flex{
     margin-bottom: 20px;
 }
 
-.sobre .txt-sobre span{
-    display: block;
-    color:var(--cor2);
-    text-shadow: 0px 0px 8px var(--cor2);
-}
-
 .sobre .txt-sobre p{
     margin: 20px 0px;
     text-align: justify;
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 .sobre .txt-sobre .bt-social button{
@@ -235,4 +228,21 @@ section.sobre .flex{
     cursor: pointer;
     margin: 0px 10px;
     transition: 1.2s;
+}
+
+/* Portfólio */
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0px 0px 10px var(--cor3);
+}
+
+section.portfolio .flex{
+    padding: 30px;
+    justify-content: space-around;
+}
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: gray;
 }
