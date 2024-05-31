@@ -444,6 +444,20 @@ footer .line-footer a{
 
     .img-port{
         width: 100%;
+        max-width: 360px;
+        margin: auto;
     }
 
+    section.portfolio .flex{
+        gap:60px;
+    }
+
+    /* footer */
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .line-footer {
+        text-align: center;
+    }
 }
