@@ -62,6 +62,20 @@ h2.titulo span{
     color: var(--cor2);
     text-shadow: 0px 0px 4px var(--cor2);
 }
+
+.bt-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--cor2);
+    font-size: 30px;
+    color:var(--cor3);
+    cursor: pointer;
+    margin: 0px 10px;
+    transition: 1.2s;
+}
+
 /* Cabeçalho */
 
 header {
@@ -107,6 +121,11 @@ header nav ul li {
 
 section.topo-site {
     padding: 40px 4%;
+    background-image: url('imagens/wallpaper1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 section.topo-site .flex {
@@ -123,7 +142,13 @@ section.topo-site .flex {
 
 .topo-site h1 span {
     color: var(--cor2);
-    text-shadow: 0px 0px 4px var(--cor2);
+    text-shadow: 0px 0px 4px var(--cor3);
+}
+
+.topo-site .txt-topo-site{
+    background-color: #021324a9;
+    padding: 20px 20px;
+    border-radius: 10px;
 }
 
 .topo-site .txt-topo-site p{
@@ -140,18 +165,18 @@ section.topo-site .flex {
     width: 400px;
     height: 400px;
     border-radius: 200px;
-    background-color: white;
+    background-color: var(--cor0);
     position: relative;
     animation: sombra 2s ease-in-out infinite alternate;
 }
 
 @keyframes sombra  {
     0%{
-        box-shadow: 0px 0px 30px white;
+        box-shadow: 0px 0px 30px var(--cor0);
     }
 
     100%{
-        box-shadow: 0px 0px 5px white;
+        box-shadow: 0px 0px 5px var(--cor0);
     }
 }
 
@@ -216,19 +241,6 @@ section.sobre .flex{
     text-align: justify;
     font-size: 1.5em;
     font-weight: 600;
-}
-
-.sobre .txt-sobre .bt-social button{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    border: none;
-    background-color: var(--cor2);
-    font-size: 30px;
-    color:var(--cor3);
-    cursor: pointer;
-    margin: 0px 10px;
-    transition: 1.2s;
 }
 
 /* Portfólio */
@@ -334,4 +346,57 @@ form .bt-enviar input{
     box-shadow: 0px 0px 10px var(--cor3);
     cursor: pointer;
     transition: 2s;
+}
+
+/* Rodapé */
+
+footer {
+    padding: 60px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding:20px;
+}
+
+.borda {
+    border-top: 2px solid  var(--cor3);
+}
+
+footer div.interface div.logo-footer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px var(--cor3);
+}
+
+footer .line-footer p{
+    color:var(--cor3);
+    font-size: 20px;
+}
+
+footer .line-footer a{
+    text-decoration: none;
+    color:var(--cor3);
+}
+
+@media screen and (max-width: 1020px){
+    /* Geral */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-site .flex{
+        flex-direction: column-reverse;
+    }
+    
+    /* header */
+    .menu-pc, .bt-contatos{
+        display:none;
+    }
+
+
 }
