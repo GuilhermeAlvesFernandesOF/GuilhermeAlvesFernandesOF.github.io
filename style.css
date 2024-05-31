@@ -45,10 +45,11 @@ body {
     transition: 1.2s;
 }
 
-button:hover {
+button:hover, form .bt-enviar input:hover {
     box-shadow: 0px 0px 10px var(--cor3);
     background-image:  linear-gradient( -0.2turn, var(--cor1), var(--cor2), var(--cor1));
     transform: scale(1.05);
+    color:var(--cor3);
 }
 
 h2.titulo {
@@ -275,4 +276,62 @@ section.portfolio .flex{
 .overlay:hover {
     opacity: 1;
     box-shadow: 0px 0px 8px var(--cor2);
+}
+
+/* Formulário */
+
+section.form {
+    padding: 80px 4%;
+}
+
+.form h2 {
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color:var(--cor2);
+    text-align: center;
+}
+
+.form span {
+    color: var(--cor3);
+    text-shadow: 0px 0px 4px var(--cor3);
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: var(--cor1);
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    color:var(--cor3);
+    font-size: 20px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .bt-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .bt-enviar input{
+    width: 200px;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    box-shadow: 0px 0px 10px var(--cor3);
+    cursor: pointer;
+    transition: 2s;
 }
