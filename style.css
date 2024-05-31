@@ -45,7 +45,7 @@ body {
     transition: 1.2s;
 }
 
-.bt-contatos button:hover {
+button:hover {
     box-shadow: 0px 0px 10px var(--cor3);
     background-image:  linear-gradient( -0.2turn, var(--cor1), var(--cor2), var(--cor1));
     transform: scale(1.05);
@@ -158,6 +158,7 @@ section.topo-site .flex {
 
 section.competencias{
     padding: 40px 4%;
+    box-shadow: 0px 0px 10px var(--cor3);
 }
 
 section.competencias .flex {
@@ -185,4 +186,53 @@ section.competencias .flex {
 .competencias .competencia-box h3{
     font-size: 26px;
     margin: 15px 0px;
+}
+
+/* Sobre */
+
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre img {
+    width: 300px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 80px;
+}
+
+.sobre .txt-sobre {
+    color:var(--cor3);
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre span{
+    display: block;
+    color:var(--cor2);
+    text-shadow: 0px 0px 8px var(--cor2);
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .bt-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--cor2);
+    font-size: 30px;
+    color:var(--cor3);
+    cursor: pointer;
+    margin: 0px 10px;
+    transition: 1.2s;
 }
