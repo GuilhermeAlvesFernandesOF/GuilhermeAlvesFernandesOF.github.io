@@ -79,7 +79,7 @@ h2.titulo span{
 /* Cabeçalho */
 
 header {
-    padding: 40px 4%;
+    padding: 10px 4%;
 }
 
 header > .interface {
@@ -120,7 +120,7 @@ header nav ul li {
 /* Topo do Site */
 
 section.topo-site {
-    padding: 40px 4%;
+    padding: 60px 4%;
     background-image: url('imagens/wallpaper1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
